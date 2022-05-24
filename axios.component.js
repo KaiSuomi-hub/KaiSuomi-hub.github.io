@@ -7,7 +7,7 @@ const getData = async (url) => {
     return data;
 };
 let dd = 'ss'
-const addr = "http://127.0.0.1:8080/data.json";
+const addr = "https://kaisuomi-hub.github.io/data.json";
 
 
 async function main() {
