@@ -15,16 +15,17 @@ async function main() {
 
     let i = 0; // zero for index
     const data = await getData(addr); // get the data
-    data.employees.forEach(function () { // foreach of the three employees
+    let output = data.employees.forEach(function () { // foreach of the three employees
         let name = data.employees[i].name //create variable with index number and get that indexes name
+        return data.employees[i].name;
         // console.log(data.employees[i].name);
         i++ // add +1
         // console.log(name)
-        return name; //return the name
-    });
-    console.log(data);
 
-    return data;
+    });
+    // console.log(data);
+        console.log(output);
+    return output;
 
 
 }
