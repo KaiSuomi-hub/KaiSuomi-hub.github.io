@@ -1,7 +1,7 @@
 //Antti Suomi 24.5
 
 // const axios = require("axios");
-// import {axios} from "./node_modules/axios/lib/axios.js";
+import axios from "axios";
 const getData = async (url) => {
     const data = (await axios.get(url)).data; //here we create a new function that get's the json data
     return data;
