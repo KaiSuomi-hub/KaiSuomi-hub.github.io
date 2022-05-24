@@ -10,14 +10,24 @@ const getData = async (url) => {
 const addr = "https://kaisuomi-hub.github.io/data.json";
 
 
+
 async function main() {
-    const data = await getData(addr);
+
+    let i = 0; // zero for index
+    const data = await getData(addr); // get the data
+    data.employees.forEach(function () { // foreach of the three employees
+        let name = data.employees[i].name //create variable with index number and get that indexes name
+        // console.log(data.employees[i].name);
+        i++ // add +1
+        // console.log(name)
+        return name; //return the name
+    });
     console.log(data);
-    let editeddata = '<p>' + data.employees + '</p>';
-    console.log(editeddata);
-    return editeddata;
+
+    return data;
+
 
 }
 
-main();
-// export default main;
+
+export default main;
