@@ -7,7 +7,7 @@ const getData = async (url) => {
     return data;
 };
 let dd = 'ss'
-const addr = "https://jsonplaceholder.typicode.com/todos";
+const addr = "https://kaisuomi-hub.github.io/data.json";
 
 
 async function main() {
